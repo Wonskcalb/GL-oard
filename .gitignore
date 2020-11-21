@@ -1,0 +1,66 @@
+# OSX
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# cache files for sublime text
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+
+*.sublime-project
+*.sublime-workspace
+
+# sftp configuration file
+sftp-config.json
+
+# Basics
+*.py[cod]
+__pycache__
+
+# Logs
+logs
+*.log
+
+# Unit test / coverage reports
+.coverage
+.tox
+htmlcov
+html_report
+
+# Translations
+*.mo
+*.pot
+
+# Vim
+*~
+*.swp
+*.swo
+
+# Compass
+.sass-cache
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw*
+
+# VS code
+.vscode
+.pythonconfig
+
+# Venv
+venv
+.venv
+
+# local env files
+.env.local
+.env.*.local
+
+# pyenv
+.python-version
+__pycache__
