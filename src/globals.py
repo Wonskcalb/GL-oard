@@ -15,3 +15,8 @@ DEBUG = env.bool("DEBUG", True)
 SDL_PATH = os.path.join(BASE_DIR, "sdl")
 DIRECTIVES_PATH = os.path.join(BASE_DIR, "directives")
 RESOLVERS_PATH = os.path.join(BASE_DIR, "resolvers")
+
+# GITLAB AUTH
+# ------------------------------------------------------------
+GITLAB_HOST = env.str("GITLAB_HOST")
+GITLAB_TOKEN = env.str("GITLAB_TOKEN")

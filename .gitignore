@@ -64,3 +64,4 @@ venv
 # pyenv
 .python-version
 __pycache__
+.env
