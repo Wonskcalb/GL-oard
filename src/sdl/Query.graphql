@@ -1,3 +1,5 @@
 type Query {
   projects(archived: Boolean): [GLProject!]!
+  issues(projectId: Int, state: GLIssueState): [GLIssue!]!
+  todos: [GLTodo!]!
 }

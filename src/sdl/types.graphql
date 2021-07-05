@@ -2,3 +2,38 @@ type GLProject {
   id: Int!
   name: String!
 }
+
+enum GLIssueState {
+  CLOSED
+  OPENED
+}
+
+type GLIssue {
+  id: Int!
+  title: String!
+  description: Int!
+  state: GLIssueState!
+  blockedBy: [GLIssue!]
+  blocks: [GLIssue!]
+  related: [GLIssue!]
+}
+
+enum GLTodoAction {
+  assigned
+  mentioned
+  build_failed
+  marked
+  approval_required
+  unmergeable
+  directly_addressed
+  merge_train_removed
+}
+
+type GLTodo {
+    action: GLTodoAction
+    author_id: Int
+    project_id: Int
+    group_id: Int
+    state: String
+    type: String
+}

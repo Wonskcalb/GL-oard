@@ -10,6 +10,12 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 DEBUG = env.bool("DEBUG", True)
 
+
+# SERVER LISTEN COFNIGURATION
+# ------------------------------------------------------------
+SERVER_HOST = env.str("SERVER_HOST", "127.0.0.1")
+SERVER_PORT = env.int("SERVER_PORT", 8000)
+
 # PATH DEFINITIONS FOR ENGINE CONFIGURATION
 # ------------------------------------------------------------
 SDL_PATH = os.path.join(BASE_DIR, "sdl")
